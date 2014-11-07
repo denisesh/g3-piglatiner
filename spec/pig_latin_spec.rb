@@ -21,12 +21,12 @@ describe PigLatin do
     expect(translation).to be ==  "eatay iepay"
   end
 
-  xit "translates a word beginning with three consonants" do
+  it "translates a word beginning with three consonants" do
     translation = PigLatin.new("three").translate
     expect(translation).to be == "eethray"
   end
 
-  xit "counts 'sch' as a single phoneme" do
+  it "counts 'sch' as a single phoneme" do
     translation = PigLatin.new("school").translate
     expect(translation).to be ==  "oolschay"
   end
@@ -36,7 +36,7 @@ describe PigLatin do
     expect(translation).to be ==  "ietquay"
   end
 
-  xit "counts 'qu' as a consonant even when xit's preceded by a consonant" do
+  it "counts 'qu' as a consonant even when xit's preceded by a consonant" do
     translation = PigLatin.new("square").translate
     expect(translation).to be ==  "aresquay"
   end
