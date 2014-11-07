@@ -20,9 +20,9 @@ class PigLatin
           "#{word[2..-1]}#{word[0..1]}ay"
        elsif word =~ /\A(?i:(?![aeiou])[a-z]){3}/
           "#{word[3..-1]}#{word[0..2]}ay"
-       elseif word =~ /[qu]{2}/
-          "#{word[2..-1]}#{word[0..1]}ay"
-         else
+       elsif word =~ /[qu]{2}/
+          "#{word[3..-1]}#{word[0..2]}ay"
+       else
           "#{word[1..-1]}#{word[0]}ay"
        end
 

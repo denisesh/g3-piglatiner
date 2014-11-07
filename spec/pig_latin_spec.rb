@@ -41,7 +41,7 @@ describe PigLatin do
     expect(translation).to be ==  "aresquay"
   end
 
-  xit "translates many words" do
+  it "translates many words" do
     translation = PigLatin.new("the quick brown fox").translate
     expect(translation).to be == "ethay ickquay ownbray oxfay"
   end
