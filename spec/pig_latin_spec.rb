@@ -31,7 +31,7 @@ describe PigLatin do
     expect(translation).to be ==  "oolschay"
   end
 
-  xit "counts 'qu' as a single phoneme" do
+  it "counts 'qu' as a single phoneme" do
     translation = PigLatin.new("quiet").translate
     expect(translation).to be ==  "ietquay"
   end
@@ -46,7 +46,7 @@ describe PigLatin do
     expect(translation).to be == "ethay ickquay ownbray oxfay"
   end
 
-  xit "handles capitalization of a word" do
+  it "handles capitalization of a word" do
     translation = PigLatin.new("Square").translate
     expect(translation).to be == "Aresquay"
   end
