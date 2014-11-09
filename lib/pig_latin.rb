@@ -10,9 +10,7 @@ class PigLatin
 
   def translate
     word.split.map {|word| translate_outer(word)}.join(" ")
-
   end
-
 
   def translate_outer(word)
     if word.match /\A[qu]{2}/
@@ -28,6 +26,7 @@ class PigLatin
     else
       word << "ay"
     end
+    #
     # if word.match(/[A-Z]/)
     #   word = word.downcase.capitalize
     # end
